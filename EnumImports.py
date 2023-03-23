@@ -19,6 +19,6 @@ while count < len(pe.DIRECTORY_ENTRY_IMPORT):
 	innercount = len (pe.DIRECTORY_ENTRY_IMPORT[count].imports)
 	iter=0
 	while iter < innercount:
-		print(pe.DIRECTORY_ENTRY_IMPORT[count].imports[iter].name)
+		print("\t",pe.DIRECTORY_ENTRY_IMPORT[count].imports[iter].name)
 		iter+=1	
 	count+=1
